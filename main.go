@@ -23,8 +23,8 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 
-	_ "github.com/go-sql-driver/mysql"
-	//_ "github.com/lib/pq"
+	//_ "github.com/go-sql-driver/mysql"
+	_ "github.com/lib/pq"
 	//_ "github.com/mattn/go-sqlite3"
 
 	_ "gin-ent-example/docs"
@@ -41,9 +41,9 @@ var svr Server
 
 func initDatabase() {
 	// init PostgreSQL
-	//client, err := ent.Open("postgres", "host=localhost port=5432 user=root password=123456 dbname=test")
+	client, err := ent.Open("postgres", "host=localhost port=5432 user=postgres password=123456 dbname=test sslmode=disable")
 	// init MySQL
-	client, err := ent.Open("mysql", "root:123456@tcp(localhost:3306)/test?parseTime=True")
+	//client, err := ent.Open("mysql", "root:123456@tcp(localhost:3306)/test?parseTime=True")
 	// init SQLite
 	//client, err := ent.Open("sqlite3", "file:ent?mode=memory&cache=shared&_fk=1")
 	// init Gremlin (AWS Neptune)
