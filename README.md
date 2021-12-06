@@ -14,7 +14,7 @@ $ go install entgo.io/ent/cmd/entc
 
 ## Create Your Schema
 ```shell
-# 需要在项目根目录
+# Run `entc init` from the root directory of the project as follows:
 $ entc init User
 ```
 

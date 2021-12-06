@@ -6,7 +6,7 @@ require (
 	entgo.io/ent v0.9.1
 	github.com/astaxie/beego v1.12.3
 	github.com/gin-gonic/gin v1.7.7
-	github.com/mattn/go-sqlite3 v2.0.3+incompatible
+	github.com/go-sql-driver/mysql v1.5.1-0.20200311113236-681ffa848bae
 	github.com/swaggo/gin-swagger v1.3.3
 	github.com/swaggo/swag v1.7.6
 )
